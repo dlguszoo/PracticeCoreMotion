@@ -13,7 +13,7 @@ struct PracticeCoreMotionApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PracticeSyncView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

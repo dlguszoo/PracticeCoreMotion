@@ -6,20 +6,74 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CF5034F92E20F9A700AF772B /* WatchPracticeCoreMotion Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CF5034EF2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF5034F72E20F9A700AF772B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF5032D92E20E87F00AF772B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF5034EE2E20F9A600AF772B;
+			remoteInfo = "WatchPracticeCoreMotion Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CF5034FD2E20F9A700AF772B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CF5034F92E20F9A700AF772B /* WatchPracticeCoreMotion Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		CF5032E12E20E87F00AF772B /* PracticeCoreMotion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeCoreMotion.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF5034EF2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchPracticeCoreMotion Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		CF09C5D22E242BA200E11198 /* Exceptions for "PracticeCoreMotion" folder in "WatchPracticeCoreMotion Watch App" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				CountdownView.swift,
+			);
+			target = CF5034EE2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		CF5032E32E20E87F00AF772B /* PracticeCoreMotion */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				CF09C5D22E242BA200E11198 /* Exceptions for "PracticeCoreMotion" folder in "WatchPracticeCoreMotion Watch App" target */,
+			);
 			path = PracticeCoreMotion;
+			sourceTree = "<group>";
+		};
+		CF5034F02E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "WatchPracticeCoreMotion Watch App";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		CF5032DE2E20E87F00AF772B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5034EC2E20F9A600AF772B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				CF5032E32E20E87F00AF772B /* PracticeCoreMotion */,
+				CF5034F02E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */,
 				CF5032E22E20E87F00AF772B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				CF5032E12E20E87F00AF772B /* PracticeCoreMotion.app */,
+				CF5034EF2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				CF5032DD2E20E87F00AF772B /* Sources */,
 				CF5032DE2E20E87F00AF772B /* Frameworks */,
 				CF5032DF2E20E87F00AF772B /* Resources */,
+				CF5034FD2E20F9A700AF772B /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CF5034F82E20F9A700AF772B /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				CF5032E32E20E87F00AF772B /* PracticeCoreMotion */,
@@ -68,6 +126,28 @@
 			);
 			productName = PracticeCoreMotion;
 			productReference = CF5032E12E20E87F00AF772B /* PracticeCoreMotion.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF5034EE2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF5034FA2E20F9A700AF772B /* Build configuration list for PBXNativeTarget "WatchPracticeCoreMotion Watch App" */;
+			buildPhases = (
+				CF5034EB2E20F9A600AF772B /* Sources */,
+				CF5034EC2E20F9A600AF772B /* Frameworks */,
+				CF5034ED2E20F9A600AF772B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				CF5034F02E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */,
+			);
+			name = "WatchPracticeCoreMotion Watch App";
+			packageProductDependencies = (
+			);
+			productName = "WatchPracticeCoreMotion Watch App";
+			productReference = CF5034EF2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					CF5032E02E20E87F00AF772B = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					CF5034EE2E20F9A600AF772B = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				CF5032E02E20E87F00AF772B /* PracticeCoreMotion */,
+				CF5034EE2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CF5032DF2E20E87F00AF772B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF5034ED2E20F9A600AF772B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CF5034EB2E20F9A600AF772B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF5034F82E20F9A700AF772B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF5034EE2E20F9A600AF772B /* WatchPracticeCoreMotion Watch App */;
+			targetProxy = CF5034F72E20F9A700AF772B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		CF5032EF2E20E88000AF772B /* Debug */ = {
@@ -302,6 +408,64 @@
 			};
 			name = Release;
 		};
+		CF5034FB2E20F9A700AF772B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKY6HK6U6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchPracticeCoreMotion;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = info.ivylee.PracticeCoreMotion;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.ivylee.PracticeCoreMotion.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Debug;
+		};
+		CF5034FC2E20F9A700AF772B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UKY6HK6U6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = WatchPracticeCoreMotion;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = info.ivylee.PracticeCoreMotion;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = info.ivylee.PracticeCoreMotion.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.5;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -319,6 +483,15 @@
 			buildConfigurations = (
 				CF5032F22E20E88000AF772B /* Debug */,
 				CF5032F32E20E88000AF772B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF5034FA2E20F9A700AF772B /* Build configuration list for PBXNativeTarget "WatchPracticeCoreMotion Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF5034FB2E20F9A700AF772B /* Debug */,
+				CF5034FC2E20F9A700AF772B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

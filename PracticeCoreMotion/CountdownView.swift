@@ -8,11 +8,23 @@
 import SwiftUI
 
 struct CountdownView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    let startTime: Date
+    @Binding var isCountdownDone: Bool
+    @State private var now: Date = Date()
+    
+    var countdown: Int {
+        max(0, Int(ceil(startTime.timeIntervalSince(now))))
     }
-}
-
-#Preview {
-    CountdownView()
+    
+    var body: some View {
+        Text("\(countdown)")
+            .font(.system(size: 40))
+            .foregroundColor(.white)
+            .onReceive(Timer.publish(every: 0.1, on: .main, in: .common).autoconnect()) { time in
+                now = time
+                if countdown <= 0 {
+                    isCountdownDone = true
+                }
+            }
+    }
 }
